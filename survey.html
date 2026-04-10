@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey — Vedikā</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="cosmos-bg survey-cosmos" aria-hidden="true"></div>
+    <main class="survey-page">
+      <div class="container narrow survey-wrap">
+        <p class="eyebrow">Vedikā</p>
+        <h1 class="survey-heading">Interest survey</h1>
+        <p class="lead survey-intro">
+          Share a few details so we can stay in touch. You can point the home
+          button to a Google Form URL or connect this form to your backend.
+        </p>
+        <form class="signup-form survey-form" id="surveyForm" action="#" method="post">
+          <label>
+            Full name
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label>
+            Contact number
+            <input
+              type="tel"
+              name="phone"
+              autocomplete="tel"
+              inputmode="tel"
+            />
+          </label>
+          <label>
+            Tell us about yourself (hometown, education, occupation, and other
+            details as much as you like).
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <button type="submit" class="btn btn-solid">Submit</button>
+          <p class="form-message" id="surveyMessage" aria-live="polite"></p>
+        </form>
+        <p class="survey-back">
+          <a href="index.html" class="back-to-top">← Back to home</a>
+        </p>
+      </div>
+    </main>
+    <script src="./survey.js"></script>
+  </body>
+</html>

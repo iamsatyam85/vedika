@@ -544,6 +544,20 @@ input:focus {
   margin-bottom: 1.25rem;
 }
 
+.survey-cta {
+  margin: 0 0 1.5rem;
+}
+
+.survey-cta .btn {
+  display: inline-block;
+}
+
+.survey-alt-label {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: rgba(236, 236, 239, 0.75);
+}
+
 textarea {
   width: 100%;
   border: 0;

@@ -145,8 +145,7 @@ h2 {
 }
 
 .hero-card,
-.tile,
-.signup-form {
+.tile {
   border: 0;
   background: var(--card);
   border-radius: 16px;
@@ -355,13 +354,6 @@ p {
   font-size: 1.35rem;
 }
 
-.signup-form {
-  margin-top: 18px;
-  padding: 18px;
-  display: grid;
-  gap: 14px;
-}
-
 label {
   font-weight: 600;
   color: var(--text);
@@ -383,12 +375,6 @@ input:focus {
   outline: none;
   border-color: var(--accent);
   box-shadow: 0 0 0 4px var(--ring);
-}
-
-.form-message {
-  min-height: 1.4em;
-  margin: 0;
-  font-weight: 500;
 }
 
 .site-footer {
@@ -522,42 +508,6 @@ input:focus {
   font-weight: 600;
 }
 
-.survey-page {
-  position: relative;
-  z-index: 2;
-  min-height: 100vh;
-  padding: 48px 0 64px;
-}
-
-.survey-wrap {
-  max-width: 560px;
-}
-
-.survey-heading {
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
-  margin: 0.2em 0 0.5em;
-  color: var(--text);
-}
-
-.survey-intro {
-  margin-bottom: 1.25rem;
-}
-
-.survey-cta {
-  margin: 0 0 1.5rem;
-}
-
-.survey-cta .btn {
-  display: inline-block;
-}
-
-.survey-alt-label {
-  margin: 0 0 0.75rem;
-  font-size: 0.95rem;
-  color: rgba(236, 236, 239, 0.75);
-}
-
 textarea {
   width: 100%;
   border: 0;
@@ -567,16 +517,6 @@ textarea {
   background: rgba(255, 255, 255, 0.06);
   color: #f2f2f3;
   resize: vertical;
-}
-
-.survey-form label {
-  display: grid;
-  gap: 6px;
-}
-
-.survey-back {
-  margin-top: 28px;
-  text-align: center;
 }
 
 @media (max-width: 900px) {
